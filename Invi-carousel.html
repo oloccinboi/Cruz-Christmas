@@ -8,9 +8,9 @@
     <style>
     
     .carousel-item {
-        opacity: 0; /* Start all images as invisible */
-        transition: opacity 0s ease-in-out; /* Smooth fade effect */
-    }
+            opacity: 0; /* Start all images as invisible */
+            transition: opacity 0s ease-in-out; /* Smooth fade effect */
+        }
 
         .carousel-item.active {
             opacity: 1; /* Make active item visible */
@@ -21,32 +21,31 @@
             width: 100%;
             height: auto;
         }
-    
 
-    /* Landscape mode: Change images for landscape orientation */
-    @media (orientation: landscape) {
-        .carousel-item:nth-child(1) img {
-            content: url('./Assets/Landscape/Story-L-1.png');
+        /* Landscape mode: Change images for landscape orientation and make them smaller */
+        @media (orientation: landscape) {
+            .carousel-item:nth-child(1) img {
+                content: url('./Assets/Landscape/Story-L-1.png');
+            }    
+            .carousel-item:nth-child(2) img {
+                content: url('./Assets/Landscape/Story-L-2.png');
+            }
+            .carousel-item:nth-child(3) img {
+                content: url('./Assets/Landscape/Story-L-3.png');
+            }
+            .carousel-item:nth-child(4) img {
+                content: url('./Assets/Landscape/Story-L-4.png');
+            }
+            .carousel-item:nth-child(5) img {
+                content: url('./Assets/Landscape/Story-L-5.png');
+            }
+            .carousel-item:nth-child(6) img {
+                content: url('./Assets/Landscape/Story-L-6.png');
+            }
+            .carousel-item:nth-child(7) img {
+                content: url('./Assets/Landscape/D-noBg.png');
+            }
         }
-        .carousel-item:nth-child(2) img {
-            content: url('./Assets/Landscape/Story-L-2.png');
-        }
-        .carousel-item:nth-child(3) img {
-            content: url('./Assets/Landscape/Story-L-3.png');
-        }
-        .carousel-item:nth-child(4) img {
-            content: url('./Assets/Landscape/Story-L-4.png');
-        }
-        .carousel-item:nth-child(5) img {
-            content: url('./Assets/Landscape/Story-L-5.png');
-        }
-        .carousel-item:nth-child(6) img {
-            content: url('./Assets/Landscape/Story-L-6.png');
-        }
-        .carousel-item:nth-child(7) img {
-            content: url('./Assets/Landscape/D-noBg.png');
-        }
-    }
     </style>
 </head>
 <body>

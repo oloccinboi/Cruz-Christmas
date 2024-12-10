@@ -36,17 +36,22 @@
         function changeImage() {
             var image = document.getElementById('image');
             
-            // If the image has been clicked once, go to a different page
-            if (imageClickedOnce) {
-                window.location.href = './Invi-clickMe.html'; // Change this to your desired URL
-            } else {
-                // If it's the first click, change the image
+            // If the image has been clicked once, change it and delay the redirection
+            if (!imageClickedOnce) {
+                // Change the image
                 if (image.src.includes('A.png')) {
                     image.src = './Assets/B.png'; // New image
                 } else {
                     image.src = './Assets/A.png'; // Original image
                 }
-                imageClickedOnce = true; // Mark the image as clicked once
+
+                // Mark the image as clicked once
+                imageClickedOnce = true;
+
+                // Set a delay before redirecting to the URL
+                setTimeout(function() {
+                    window.location.href = './Invi-clickMe.html'; // Change this to your desired URL
+                }, 1000); // Delay of 2 seconds (2000 milliseconds) before redirecting
             }
         }
     </script>
